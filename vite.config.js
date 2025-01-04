@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: '0.0.0.0',
-    port: 5000, // Or any other port number
+    port: import.meta.env.VITE_PORT, // Or any other port number
   }
 })
